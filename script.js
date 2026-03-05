@@ -83,7 +83,7 @@ function playGame(playerMove) {
       score.wins += 1;
     } else if (result === "You Loose.") {
       score.losses += 1;
-    } else if ((result = "Tie.")) {
+    } else if (result === "Tie.") {
       score.ties += 1;
     }
     localStorage.setItem("score", JSON.stringify(score)); //only support strings
